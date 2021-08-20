@@ -1,0 +1,35 @@
+*,*::before,*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: "Poppins",serif;
+}
+
+.main{
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 3rem 1rem;
+} 
+
+.btn{
+    display: inline-block;
+    padding: 10px 16px;
+    border: 1px solid #4392f3;
+    border-radius: 4px;
+    margin-right: 10px;
+    color: rgb(128, 128, 128);
+    transition: 0.2s ease-in-out;
+}
+
+
+.btn:hover{
+   color: #fff;
+   border: 1px solid #60A5FA;
+   background-color: #60A5FA;
+}
+
+

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apple I Mac 24inch </title>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!--  tailwind css -->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <!-- custom css file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="main">
+        <section class="flex gap-16">
+            <div class="banner w-2/5">
+                <img src="images/mac.png" alt="i-mac">
+            </div>
+            <div class="details w-3/5">
+                <!--  heading part -->
+                <div class="heading">
+                    <h1 class="text-4xl mb-6 font-medium leading-tight">Customize your Blue 24-inc <br> iMac with <span
+                            class="text-blue-400">Apple M1 cheip.</span> </h1>
+                    <p class="pr-10 mb-12 leading-relaxed">Apple Silicon M1 24-inch iMac review: Computing power for the
+                        masses
+                        The 24-inch iMac is a testament to the power and efficiency the M1 processor provides. Apple was
+                        able to move from the bulky-aging iMac chassis to a 11.5mm thin slab of aluminum with whisper
+                        quiet
+                        fans. The 4.5K display with a slim bezel and colorful design will make your desk pop with
+                        Apple's
+                        new style. </p>
+                </div>
+
+                <!-- Memory  -->
+                <div class="mt-10">
+                    <h3 class="font-semibold text-1xl mb-3 flex justify-between">Memory </h3>
+                    <button class="btn" id="memory-default"> 8GB unified Memory </button>
+                    <button class="btn" id="memory-one"> 16GB unified Memory </button>
+                </div>
+
+                <!-- Storage  -->
+                <div class="mt-10">
+                    <h3 class="font-semibold text-1xl mb-3">Storage </h3>
+                    <button class="btn" id="storage-default"> 256GB SSD Storage </button>
+                    <button class="btn" id="storage-one"> 512GB SSD Storage </button>
+                    <button class="btn" id="storage-one"> 1TB SSD Storage </button>
+                </div>
+
+                <!-- Delivery  -->
+                <div class="mt-10">
+                    <h3 class="font-semibold text-1xl mb-3">Chose your delivery option </h3>
+                    <button class="btn" id="delivery-default"> 8GB unified Memory </button>
+                    <button class="btn" id="delivery-one"> 16GB unified Memory </button>
+                </div>
+
+
+                <!-- calculation -->
+                <div class="mt-10 w-1/2">
+                    <ul>
+                        <li class="font-semibold py-3 pl-2 pr-4 border-b-2 border-gray-200 flex justify-between">Best
+                            price :
+                            <span>$<span id="mack-price">1299 </span></span></li>
+
+                        <li class="font-semibold py-3 pl-2 flex justify-between pr-4 border-b-2 border-gray-200 ">Extra
+                            Memory Cost :
+                            <span>$<span id="memory-price">0</span></span>
+                        </li>
+
+                        <li class="font-semibold py-3 pl-2 flex justify-between pr-4 border-b-2 border-gray-200 "> Extra
+                            Storage Cost
+                            <span>$<span id="storage-price">0 </span></span>
+                        </li>
+
+
+                        <li class="font-semibold py-3 pl-2 flex justify-between pr-4 border-b-2 border-gray-500 ">
+                            Delivery Charge
+                            <span>$<span id="delivery-price">0 </span></span>
+                        </li>
+
+                        <li class="font-semibold py-3 pl-2 flex justify-between pr-4 "> Total Price
+                            <span>$<span id="total-price">1299</span></span>
+                        </li>
+
+                    </ul>
+                </div>
+                <!-- promo code -->
+                <div class="mt-6">
+                    <h3 class="font-semibold mb-2">Add Promo Code </h3>
+                    <input class="border-gray-200 border-2 p-1 rounded" type="text" id="promo-code">
+                    <button id="submit-code" class="text-white bg-red-500 py-1 px-3 rounded"> Apply </button>
+                </div>
+            </div>
+        </section>
+             <!--  overall total -->
+             <div class="mt-10 pt-6 text-center border-t-2">
+                <h1 class="text-3xl font-semibold">Total: $<span id="overall-total"> </span></h1>
+            </div>
+    </main>
+
+    <!--  script js file -->
+    <script src="js/app.js"></script>
+</body>
+
+</html>
