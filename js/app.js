@@ -47,20 +47,19 @@ common(deliveryOne, deliveryPrice, 20, false);
 
 // Apply promo coupon code with validation
 submitCode.addEventListener("click", function () {
-    if (promoCode.value == "stevekaku" && isNaN(promoCode.value)) {
+    if (promoCode.value.toLowerCase() == "stevekaku" && isNaN(promoCode.value)) {
         const percentage = (20 / 100) * parseFloat(overallTotal.innerText);
-        overallTotal.innerText -= percentage;
+        overallTotal.innerText -= percentage.toFixed(2);
         //validation
         error.style.visibility = "hidden";
 
         // disabled the Apply btn if user code is true. as if he couldn't try again.
         submitCode.disabled = true;
 
-    } else if (promoCode.value == "" || promoCode.value != "stevekaku") {
+    } else if (promoCode.value.toLowerCase() == "" || promoCode.value.toLowerCase() != "stevekaku") {
         //validation
         error.style.visibility = "visible";
     }
-
     // clear the input field
     promoCode.value = "";
 });
