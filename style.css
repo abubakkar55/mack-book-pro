@@ -17,10 +17,10 @@ body{
 
 .btn{
     display: inline-block;
-    padding: 10px 16px;
+    padding: 10px;
     border: 1px solid #4392f3;
     border-radius: 4px;
-    margin-right: 10px;
+    margin-right: 5px;
     color: rgb(128, 128, 128);
     transition: 0.2s ease-in-out;
 }
